@@ -1,7 +1,28 @@
 aid: rebel-girls
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rebel-girls.png
 name: Rebel Girls
-description: Rebel Girls is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rebel Girls is a global media and publishing brand that celebrates inspiring
+  stories about girls and women, empowering young audiences through books, a
+  podcast, a YouTube channel, apparel and accessories, activities, and the Rebel
+  Girls Sport program. Surfaced as a portfolio company of 500 Global and added to
+  the API Evangelist network for enrichment. As of this pass Rebel Girls publishes
+  no developer, API, or well-known discovery surface: rebelgirls.com redirects to
+  www.rebelgirls.com and every standard well-known endpoint returns 404, and there
+  are no developer/api subdomains. This profile captures the company's public
+  identity and a live domain-security posture probe; it carries no API artifacts
+  because there is no public API to describe.
 url: https://raw.githubusercontent.com/api-evangelist/rebel-girls/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Media
+- Publishing
+- Consumer
+- Children
+- Education
+- Entertainment
+- Content
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +50,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://rebelgirls.com
+  url: https://www.rebelgirls.com
+- type: Blog
+  url: https://www.rebelgirls.com/blog
+- type: Support
+  url: https://www.rebelgirls.com/contact
+- type: HelpCenter
+  url: https://www.rebelgirls.com/faqs
+- type: PrivacyPolicy
+  url: https://www.rebelgirls.com/privacy-policy
+- type: DomainSecurity
+  url: security/rebel-girls-domain-security.yml
+- type: WellKnown
+  url: well-known/rebel-girls-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

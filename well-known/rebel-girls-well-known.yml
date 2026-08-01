@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of rebelgirls.com (root redirects 308 -> www.rebelgirls.com)
+note: >-
+  All standard well-known and discovery endpoints return 404 after the canonical
+  308 redirect to www.rebelgirls.com. Rebel Girls is a consumer media/publishing
+  brand with no developer or API surface. Absence recorded as honest data.
+host: https://www.rebelgirls.com
+probes:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /llms.txt
+  status: 404
+  file: null
+- path: /openapi.json
+  status: 404
+  file: null
+subdomains:
+- host: https://developer.rebelgirls.com
+  status: 000
+  note: does not resolve
+- host: https://api.rebelgirls.com
+  status: 000
+  note: does not resolve
