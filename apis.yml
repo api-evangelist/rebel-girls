@@ -35,6 +35,9 @@ description: >-
   identity and a live domain-security posture probe; it carries no API artifacts
   because there is no public API to describe.
 url: https://raw.githubusercontent.com/api-evangelist/rebel-girls/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "This profile captures the company's public identity and a live domain-security posture probe; it carries no API artifacts because there is no public API to describe."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
